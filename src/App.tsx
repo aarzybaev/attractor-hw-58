@@ -9,11 +9,11 @@ import Alert from './components/Alert/Alert';
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [showAlert, setShowAlert] = useState(true);
-  const [messages, setMessages] = useState<Message[]>([
+  const messages: Message[]= [
     {id: 1, title: 'Title', message: 'My first message'},
     {id: 2, title: 'Title', message: 'My second message'},
     {id: 3, title: 'Title', message: 'My third message'}
-  ]);
+  ];
   const cancel = () => setShowModal(false);
   const closeAlert = () => setShowAlert(false);
 
